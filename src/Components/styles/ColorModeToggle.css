@@ -1,0 +1,10 @@
+.color-mode-toggle {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.color-mode-label {
+  margin-right: 8px;
+} 
+

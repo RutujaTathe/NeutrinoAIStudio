@@ -1,0 +1,7 @@
+body {
+  background: linear-gradient(135deg, #ffe5c2 0%, #ffd1a6 40%, #ffb37b 100%);
+  min-height: 100vh;
+}
+[data-theme="dark"] body {
+  background: linear-gradient(135deg, #2d1a13 0%, #4b2e1e 40%, #b85c1e 100%);
+}

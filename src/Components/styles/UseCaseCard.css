@@ -1,0 +1,131 @@
+.usecase-card {
+  width: 100%;
+  max-width: 320px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(8, 29, 62, 0.10);
+  border: 1.5px solid #e3edfa;
+  margin: 14px 10px;
+  transition: box-shadow 0.25s, transform 0.22s, border 0.18s;
+  padding: 0;
+}
+
+.usecase-card:hover {
+  box-shadow: 0 10px 36px rgba(8, 29, 62, 0.18);
+  transform: translateY(-6px) scale(1.035);
+}
+
+.usecase-card-header {
+  position: relative;
+  height: 160px;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.usecase-card:hover .usecase-card-header {
+  transform: scale(1.03);
+}
+
+.usecase-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 20px;
+  background: transparent;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.usecase-card-description {
+  flex: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  margin-bottom: 12px;
+  line-height: 1.5;
+  color: inherit;
+  max-height: 6em; 
+}
+
+.usecase-card-content h6,
+.usecase-card-content .MuiTypography-h6 {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.usecase-card-content > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.usecase-card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  min-height: 52px; 
+}
+
+[data-theme='dark'] .usecase-card {
+  border: 1.5px solid #23272f;
+  box-shadow: 0 4px 24px rgba(20, 40, 80, 0.18);
+}
+
+[data-theme='dark'] .usecase-card:hover {
+  box-shadow: 0 10px 36px rgba(20, 40, 80, 0.28);
+}
+
+@media (max-width: 900px) {
+  .usecase-card {
+    max-width: 95vw;
+    height: auto;
+    min-height: 380px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .usecase-card {
+    max-width: 100vw;
+    height: auto;
+    min-height: 320px;
+    margin: 8px 0;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(8, 29, 62, 0.10);
+  }
+  .usecase-card-content {
+    padding: 10px 8px 10px 8px;
+  }
+  .usecase-card-image-wrapper {
+    height: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .usecase-card {
+    max-width: 100vw;
+    width: 100vw;
+    margin: 4px 0 4px 0;   
+    border-radius: 0;      
+  }
+  .usecase-card-content {
+    padding: 8px 4px 8px 4px;
+    font-size: 0.95em;      
+  }
+} 

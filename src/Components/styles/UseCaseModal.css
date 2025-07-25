@@ -1,0 +1,51 @@
+.usecase-modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 24px;
+  outline: none;
+  box-sizing: border-box; 
+}
+
+.usecase-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.usecase-modal-details {
+  margin-top: 16px;
+}
+
+.usecase-modal-interaction {
+  margin-top: 24px;
+}
+
+@media (max-width: 600px) {
+  .usecase-modal-box {
+    width: 98vw;
+    min-width: 0;
+    max-width: 99vw;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;    
+  }
+  body {
+    overflow-x: hidden;   
+  }
+}
+
+@media (max-width: 400px) {
+  .usecase-modal-box {
+    width: 100vw;           
+    left: 0;               
+    transform: translate(0, -50%); 
+    margin-left: 0;        
+    border-radius: 0 0 12px 12px;
+  }
+} 
